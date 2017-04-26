@@ -1,4 +1,5 @@
 <?php
+ header("Access-Control-Allow-Origin: chrome-extension://fdefafihdniegbhnajbmgkmjcpdhjpkl");
 
 /**
  * Laravel - A PHP Framework For Web Artisans
