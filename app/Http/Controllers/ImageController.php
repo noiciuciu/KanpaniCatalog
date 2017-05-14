@@ -48,4 +48,16 @@ class ImageController extends Controller {
         }
         return 'outdated';
     }
+
+    public function retrieveItemEffect($id) {
+        $url = "http://img4.kanpani.jp/img/header/item_effect/".$id.".png";
+        $dir = "public/item_effect";
+        $fileName = $dir."/".$id.".png";
+        
+        $this->createDirectoryIfNeed($dir);
+        if ($this->downloadFileIfNeed($fileName, $url)) {
+            return Storage::url($fileName);
+        }
+        return 'outdated';
+    }
 }
