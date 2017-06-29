@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('chara_thumbnail/{id}', 'ImageController@retrieveThumbnail');
 Route::get('equip_thumbnail/{id}', 'ImageController@retrieveEquipThumbnail');
 Route::get('item_effect/{id}', 'ImageController@retrieveItemEffect');
+
+Route::post('master/update_skills', 'MasterDataController@updateSkills');
+Route::get('master/skills', 'MasterDataController@getMasterSkills');
