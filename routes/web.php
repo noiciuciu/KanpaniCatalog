@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('chara_thumbnail/{id}', 'ImageController@retrieveThumbnail');
 Route::get('equip_thumbnail/{id}', 'ImageController@retrieveEquipThumbnail');
+Route::get('large_equip_thumbnail/{id}', 'ImageController@retrieveLargeEquipThumbnail');
 Route::get('item_effect/{id}', 'ImageController@retrieveItemEffect');
 
 Route::post('master/update_skills', 'MasterDataController@updateSkills');
